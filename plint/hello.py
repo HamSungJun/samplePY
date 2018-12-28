@@ -5,11 +5,12 @@ class hello_machine:
     def hello_1(self):
         print("Hello")
     def hello_2(self):
-    	print("hello2")
+    	return "Hello2"
 
 # 주석추가
 a = hello_machine()
 
-a.hello2()
+print(a.hello_2())
 
 print("new")
+
