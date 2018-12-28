@@ -10,4 +10,4 @@ a = hello_machine()
 
 a.hello_1();
 
-
+print("new")
