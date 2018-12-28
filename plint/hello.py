@@ -4,10 +4,12 @@ class hello_machine:
 
     def hello_1(self):
         print("Hello")
+    def hello_2(self):
+    	print("hello2")
 
 # 주석추가
 a = hello_machine()
 
-a.hello_1();
+a.hello2()
 
 print("new")
