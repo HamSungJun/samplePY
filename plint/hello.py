@@ -5,7 +5,7 @@ class hello_machine:
     def hello_1(self):
         print("Hello")
 
-
+# 주석추가
 a = hello_machine()
 
 a.hello_1();
