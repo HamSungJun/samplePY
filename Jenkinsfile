@@ -9,7 +9,7 @@ pipeline {
             stages {
               stage('build') {
                 steps {
-                  sh 'pylint hello.py > pylint.log'
+                  sh 'pyLint hello.py > pylint.log'
                   sh 'ls -al'
                 }
               }
