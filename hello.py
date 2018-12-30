@@ -12,5 +12,5 @@ a = hello_machine()
 print(a.hello_2())
 print(a.hello_2())
 
-print("ne)
+print("ne")
 
