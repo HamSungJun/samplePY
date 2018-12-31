@@ -9,8 +9,6 @@ hello2.py:15: [C0303, ] Trailing whitespace (trailing-whitespace)
 hello2.py:16: [W0311, ] Bad indentation. Found 2 spaces, expected 4 (bad-indentation)
 hello2.py:17: [W0311, ] Bad indentation. Found 4 spaces, expected 8 (bad-indentation)
 hello2.py:18: [W0311, ] Bad indentation. Found 4 spaces, expected 8 (bad-indentation)
-hello2.py:19: [C0303, ] Trailing whitespace (trailing-whitespace)
-hello2.py:20: [C0303, ] Trailing whitespace (trailing-whitespace)
 hello2.py:21: [C0325, ] Unnecessary parens after 'print' keyword (superfluous-parens)
 hello2.py:22: [C0325, ] Unnecessary parens after 'print' keyword (superfluous-parens)
 hello2.py:24: [C0304, ] Final newline missing (missing-final-newline)
@@ -50,5 +48,5 @@ hello.py:7: [R0201, hello_machine.hello_2] Method could be a function (no-self-u
 hello.py:10: [C0103, ] Constant name "a" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 --------------------------------------------------------------------
-Your code has been rated at -6.79/10 (previous run: -6.79/10, +0.00)
+Your code has been rated at -6.07/10 (previous run: -6.79/10, +0.71)
 
