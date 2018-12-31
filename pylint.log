@@ -48,5 +48,5 @@ hello.py:7: [R0201, hello_machine.hello_2] Method could be a function (no-self-u
 hello.py:10: [C0103, ] Constant name "a" doesn't conform to UPPER_CASE naming style (invalid-name)
 
 --------------------------------------------------------------------
-Your code has been rated at -6.07/10 (previous run: -6.79/10, +0.71)
+Your code has been rated at -6.07/10 (previous run: -6.07/10, +0.00)
 
