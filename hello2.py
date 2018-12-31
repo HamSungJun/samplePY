@@ -16,9 +16,9 @@ class hi_maam:
   def holllo(self):
     a = 3 + 2
     return a
-   
-    
+
+
 print(a.hello_23())
 print(a.hello_23())
 
-print("newwwwwwwwwwwwwwwwwwwwww")
+print("newwwwwwwwwwwwwwwwwwwwww222")
