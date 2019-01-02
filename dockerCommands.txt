@@ -1,0 +1,2 @@
+docker exec -it hopeful_ishizaka /bin/bash
+apk add <>
