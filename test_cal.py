@@ -1,4 +1,4 @@
-import unittest
+import xmlrunner.unittest as unittest
 import random
 import cal as cal
 import xmlrunner
@@ -53,7 +53,7 @@ class TesterClass(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(
-    testRunner=xmlrunner.XMLTestRunner(output='a.xml'),
+    testRunner=xmlrunner.XMLTestRunner(output='test-reports'),
     # these make sure that some options that are not applicable
     # remain hidden from the help menu.
     failfast=False, buffer=False, catchbreak=False)
