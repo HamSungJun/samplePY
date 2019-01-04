@@ -50,6 +50,12 @@ class TesterClass(unittest.TestCase):
                 int(randAB[0]) / int(randAB[1])
             self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
 
+kwargs = {
+    "output": "",
+    "report_name": "reports",
+    "failfast": True
+}
+
 if __name__ == '__main__':
-    unittest.main(testRunner=HTMLTestRunner(output=''))
+    unittest.main(testRunner=HTMLTestRunner(**kwargs))
 
