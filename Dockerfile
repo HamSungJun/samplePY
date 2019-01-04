@@ -8,3 +8,5 @@ RUN pip3 install --upgrade pip
 RUN pip3 install pylint
 RUN pip3 install unittest-xml-reporting
 RUN pip3 install PyUnitReport
+RUN pip3 install codecov
+RUN pip3 install coverage
