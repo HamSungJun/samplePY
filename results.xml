@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite errors="1" failures="0" name="TesterClass-20190104135832" skipped="0" tests="4" time="0.021" timestamp="2019-01-04T13:58:32">
+		<testcase classname="TesterClass" name="test_add" time="0.006" timestamp="2019-01-04T13:58:32"/>
+		<testcase classname="TesterClass" name="test_mul" time="0.006" timestamp="2019-01-04T13:58:32"/>
+		<testcase classname="TesterClass" name="test_sub" time="0.007" timestamp="2019-01-04T13:58:32"/>
+		<testcase classname="TesterClass" name="test_div" time="0.002" timestamp="2019-01-04T13:58:32">
+			<error message="float division by zero" type="ZeroDivisionError">
+<![CDATA[Traceback (most recent call last):
+  File "test_cal.py", line 52, in test_div
+    self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
+  File "C:\Users\god18\Desktop\Dev\pylint\samplePY\samplePY\cal.py", line 11, in div
+    return (a/b)
+ZeroDivisionError: float division by zero
+]]>			</error>
+		</testcase>
+		<system-out>
+<![CDATA[
+setUp()...
+
+...tearDown
+
+setUp()...
+
+...tearDown
+
+setUp()...
+
+...tearDown
+
+setUp()...
+
+...tearDown
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testsuite>
+</testsuites>

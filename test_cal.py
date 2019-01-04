@@ -1,10 +1,11 @@
 import unittest
 import random
-import cal as cal
-from pyunitreport import HTMLTestRunner
+import cal
+import xmlrunner
 
 def randNum():
     randAB = [(random.randint(0, 300)+random.random()),(random.randint(0, 300)+random.random())]
+
     return randAB
 
 class TesterClass(unittest.TestCase):
@@ -50,12 +51,9 @@ class TesterClass(unittest.TestCase):
                 int(randAB[0]) / int(randAB[1])
             self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
 
-kwargs = {
-    "output": "",
-    "report_name": "reports",
-    "failfast": True
-}
-
 if __name__ == '__main__':
-    unittest.main(testRunner=HTMLTestRunner(**kwargs))
+    with open('results.xml', 'wb') as output:
+        unittest.main(
+            testRunner=xmlrunner.XMLTestRunner(output=output),
+            failfast=False, buffer=False, catchbreak=False)
 
