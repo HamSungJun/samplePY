@@ -1,0 +1,18 @@
+#!/bin/bash
+
+python3 -m pylint --generate-rcfile > pylint.cfg
+python3 -m pylint --rcfile=pylint.cfg $(find . -maxdepth 4 -name "*.py") --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" --disable=C0111,C0103,E0602,W0612,W0702,R0801 > pylint.log
+
+# check warning on pylint log
+lintResult=`cat sample.log | grep 'rated at 10.00/10'`
+echo $lintResult;
+
+if [ 0 -ne ${#lintResult} ];
+then
+   echo "Linting result is satisfactory .";
+   rm -rf test-reports
+   py.test --junitxml=./test-reports/a.xml test_calpyt.py
+else
+   echo "Linting result is not satisfactory ";
+   exit 1;
+fi
