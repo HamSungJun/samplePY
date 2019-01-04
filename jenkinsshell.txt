@@ -16,3 +16,7 @@ else
    echo "Linting result is not satisfactory ";
    exit 1;
 fi
+
+------------------------------------------------------------------------------------------------------------------
+
+pip install PyUnitReport

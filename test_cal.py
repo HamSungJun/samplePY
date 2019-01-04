@@ -5,7 +5,6 @@ from pyunitreport import HTMLTestRunner
 
 def randNum():
     randAB = [(random.randint(0, 300)+random.random()),(random.randint(0, 300)+random.random())]
-
     return randAB
 
 class TesterClass(unittest.TestCase):
@@ -52,5 +51,5 @@ class TesterClass(unittest.TestCase):
             self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HTMLTestRunner(output='a.html'))
+    unittest.main(testRunner=HTMLTestRunner(output=''))
 
