@@ -1,6 +1,7 @@
 import unittest
 import random
-import cal 
+import cal as cal
+import xmlrunner
 
 def randNum():
     randAB = [(random.randint(0, 300)+random.random()),(random.randint(0, 300)+random.random())]
@@ -17,9 +18,9 @@ class TesterClass(unittest.TestCase):
     def test_add(self):
 
         for i in range(1 , 1000):
-
+            
             randAB = randNum()
-            result = cal.add(randAB[0],randAB[1])
+            result = cal.add(randAB[0], randAB[1])
             self.assertEqual(result , randAB[0]+randAB[1])
 
     def test_sub(self):
@@ -35,7 +36,7 @@ class TesterClass(unittest.TestCase):
         for i in range(1 , 1000):
 
             randAB = randNum()
-            result = cal.mul(randAB[0],randAB[1])
+            result = cal.mul(randAB[0], randAB[1])
             self.assertEqual(result , randAB[0]*randAB[1])
 
     def test_div(self):
@@ -48,8 +49,12 @@ class TesterClass(unittest.TestCase):
             
             with self.assertRaises(ZeroDivisionError):
                 int(randAB[0]) / int(randAB[1])
-            self.assertEqual(cal.div(randAB[0],randAB[1]), randAB[0]/randAB[1])
+            self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(
+    testRunner=xmlrunner.XMLTestRunner(output='a.xml'),
+    # these make sure that some options that are not applicable
+    # remain hidden from the help menu.
+    failfast=False, buffer=False, catchbreak=False)
 
