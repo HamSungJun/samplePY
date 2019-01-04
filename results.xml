@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-	<testsuite errors="1" failures="0" name="TesterClass-20190104135832" skipped="0" tests="4" time="0.021" timestamp="2019-01-04T13:58:32">
-		<testcase classname="TesterClass" name="test_add" time="0.006" timestamp="2019-01-04T13:58:32"/>
-		<testcase classname="TesterClass" name="test_mul" time="0.006" timestamp="2019-01-04T13:58:32"/>
-		<testcase classname="TesterClass" name="test_sub" time="0.007" timestamp="2019-01-04T13:58:32"/>
-		<testcase classname="TesterClass" name="test_div" time="0.002" timestamp="2019-01-04T13:58:32">
+	<testsuite errors="1" failures="0" name="TesterClass-20190104140107" skipped="0" tests="4" time="0.021" timestamp="2019-01-04T14:01:07">
+		<testcase classname="TesterClass" name="test_add" time="0.007" timestamp="2019-01-04T14:01:07"/>
+		<testcase classname="TesterClass" name="test_mul" time="0.006" timestamp="2019-01-04T14:01:07"/>
+		<testcase classname="TesterClass" name="test_sub" time="0.007" timestamp="2019-01-04T14:01:07"/>
+		<testcase classname="TesterClass" name="test_div" time="0.001" timestamp="2019-01-04T14:01:07">
 			<error message="float division by zero" type="ZeroDivisionError">
 <![CDATA[Traceback (most recent call last):
   File "test_cal.py", line 52, in test_div
