@@ -41,15 +41,10 @@ class TesterClass(unittest.TestCase):
 
     def test_div(self):
 
-        for i in range(1 , 1000):
+        for i in range(1 , 10):
 
             randAB = randNum()
-            if(i == 1):
-                randAB[1] = 0
-            
-            with self.assertRaises(ZeroDivisionError):
-                int(randAB[0]) / int(randAB[1])
-
+            self.assertEqual(cal.div(randAB[0], randAB[1]), randAB[0] / randAB[1])
 
 if __name__ == '__main__':
     with open('results.xml', 'wb') as output:
