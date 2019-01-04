@@ -1,4 +1,4 @@
-import xmlrunner.unittest as unittest
+import unittest
 import random
 import cal as cal
 import xmlrunner
