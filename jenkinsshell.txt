@@ -23,3 +23,22 @@ pip install PyUnitReport
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 java -jar jenkins-cli.jar -s http://localhost:8080 who-am-i --username  sungjun  --password  tjdwns12
 RUN codecov -t the-repository-upload-token
+
+source ~/.bash_profile
+pyenv install <version>
+pyenv virtualenv <python version> <virtualenv name>
+source activate <virtualenv name>
+...
+source deactivate <virtualenv name>
+source uninstall <virtualenv name>
+
+
+reportPath="./QualityReports"
+
+if [ -d "$reportPath"]
+then
+    rm -rf "$reportPath"
+    mkdir "$reportPath"
+else
+    mkdir "$reportPath"
+fi

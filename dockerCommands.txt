@@ -1,2 +1,4 @@
 docker exec -it hopeful_ishizaka /bin/bash
+docker commit <containerid> <repo/path:tagName>
+docker push <repo/path:tagName>
 apk add <>
